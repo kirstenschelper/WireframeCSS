@@ -1,0 +1,194 @@
+/*wireframe.css*/
+
+/* Works together with Twentysixteen, Twentyseventeen, Twentynineteen and TwentyTwenty and many other themes.
+*/
+
+/*
+* GATHER RESSOURCES
+*/
+
+/* Import sketch style Google font */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+/*implement webfont redacted (changes text to gray bars)*/
+@font-face {
+  font-family: 'redactedregular';
+  src: url('/webfonts-wireframe/redacted-regular.eot');
+  src: url('/webfonts-wireframe/redacted-regular.eot?#iefix') format('embedded-opentype'), url('webfonts-wireframe/redacted-regular.woff2') format('woff2'), url('webfonts-wireframe/redacted-regular.woff') format('woff'), url('webfonts-wireframe/redacted-regular.ttf') format('truetype'), url('webfonts-wireframe/redacted-regular.svg#redactedregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+$sketch-font: 'Shadows Into Light Two', cursive;
+$copy-font: "redactedregular";
+
+//some crooked style border
+%distorted-border {
+  border: 2px solid #909090;
+  border-radius: 2% 1% 2% 1% / 1% 1% 2% 4%;
+}
+
+/*
+* SOME RESETS
+*/
+body.is-wireframe {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+body.is-wireframe * {
+  border-radius: 0;
+  background-image: none;
+  font-style: normal !important;
+}
+
+/*
+* CHANGE IMAGES TO PLACEHOLDER
+*/
+.is-wireframe {
+  div img,
+  figure img {
+    @extend %distorted-border;
+    -o-object-position: -99999px 99999px;
+    object-position: -99999px 99999px;
+    background: url('images/placeholder.png') center bottom no-repeat;
+    background-size: cover !important;
+  }
+
+  .wp-block-cover {
+    background: url('images/placeholder.png') center bottom no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .has-background-dim:before {
+    background-color: black !important;
+  }
+}
+
+/*
+* CHANGE FONTS
+*/
+
+/* 1. Text elements that will be not readable (gray bars)
+  like paragraphs for example. */
+body.is-wireframe,
+.is-wireframe p,
+.is-wireframe .widget ul li a,
+.wp-block-latest-posts__post-excerpt,
+.widget * {
+  font-family: $copy-font !important;
+  font-size: 1em;
+  color: #999 !important;
+  letter-spacing: 0;
+}
+
+/* 2. Text elements with sketch font that are still readable
+  like headlines and links for example. */
+.is-wireframe {
+  ::-webkit-input-placeholder {
+    font-family: $sketch-font !important;
+    line-height: 1.2 !important;
+    letter-spacing: 2px;
+  }
+
+  ::-moz-placeholder {
+    font-family: $sketch-font !important;
+    line-height: 1.2 !important;
+    letter-spacing: 2px;
+  }
+
+  :-ms-input-placeholder {
+    font-family: $sketch-font !important;
+    line-height: 1.2 !important;
+    letter-spacing: 2px;
+  }
+
+  ::-ms-input-placeholder {
+    font-family: $sketch-font !important;
+    line-height: 1.2 !important;
+    letter-spacing: 2px;
+  }
+
+  input,
+  label,
+  a,
+  a.button,
+  .wp-block-cover__inner-container p,
+  .site-description,
+  .site-title,
+  .site-footer *,
+  #site-footer *,
+  h1,
+  h1 a,
+  h2,
+  h2 a,
+  h3,
+  h3 a,
+  h4,
+  h4 a,
+  h5,
+  h5 a,
+  h6 {
+    font-family: $sketch-font !important;
+    line-height: 1.2 !important;
+    letter-spacing: 2px;
+  }
+}
+
+/*Font color on dimmed cover blcosk always be white*/
+.is-wireframe {
+  .wp-block-cover.has-background-dim .wp-block-cover__inner-container * {
+    color: white !important;
+  }
+
+  /*
+* BITS AND BOBS
+*/
+
+  /* Define some extra CSS for wireframe font
+  because the sketchy font is – different. */
+  .entry-content h1 {
+    font-size: 2.6em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+  }
+
+  .entry-content h2 {
+    font-size: 2.2em;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+  }
+
+  .entry-content h3 {
+    font-size: 1.5em;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+  }
+
+  .entry-content h4 {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+  }
+
+  /* Buttons Block hover */
+  .wp-block-button__link:hover,
+  .wp-block-button.is-style-outline .wp-block-button__link:hover {
+    background-color: #0972be;
+    color: white;
+  }
+
+  /* Hide elements that make no sense in a wireframe. */
+  .edit-link,
+  .post-edit-link,
+  .post-edit,
+  .comment-form label {
+    display: none !important;
+  }
+
+  /* Leave adminbar alone. */
+  div#wpadminbar,
+  div#wpadminbar a {
+    line-height: inherit !important;
+    font-family: inherit !important;
+  }
+}
