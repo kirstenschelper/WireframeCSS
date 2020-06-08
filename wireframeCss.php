@@ -28,7 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
  */
 add_action( 'wp_enqueue_scripts', static function () {
 	wp_register_style( 'wireframe-styles', plugins_url( '/assets/css/wireframe.css', __FILE__ ) );
-	wp_enqueue_style( 'wireframe-styles', plugins_url( '/assets/css/wireframe.css', __FILE__ ) );
+	wp_enqueue_style( 'wireframe-styles' );
 } );
 
 /**
