@@ -30,7 +30,8 @@ Thank you, Christian!
 
 
 ## Frequently Asked Questions
-= I can't see a wireframe look with my theme. =
+
+### I can't see a wireframe look with my theme.
 
 The wireframe css works together with all the latest standard themes: Twentysixteen, Twentyseventeen, Twentynineteen and TwentyTwenty.
 
@@ -39,17 +40,18 @@ In many cases you need to make some adaptions to the wireframe.css.
 
 There are two places in the css file where you can add extra selectors or classes. 
 Look for these comments:
+```css
   /* 1. Text elements that will be not readable (gray bars)
   like paragraphs for example. */
 
   /* 2. Text elements with sketch font that will still be readable
   Like headlines and links for example. */
+```
 
 In your theme look for selectors and classes that add a font-family. 
 Add these selectors and/or classes to the wireframe.css.
 
 For example:
-
 ```css
   /** 1. Elements with redacted font (gray bars – not readable). */
   p,
