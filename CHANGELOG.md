@@ -7,6 +7,7 @@
 * Restructuring of all assets to get more overview inside the repository.
 * Add a markdown formatted readme, much easier to read on GitHub.
 * Rename main file to have the name for plugin, file and namespace.
+* Leave the license as file to clear statement, automatic visible from GitHub.
 
 ## 0.1.1
 * Changed images to placeholders
