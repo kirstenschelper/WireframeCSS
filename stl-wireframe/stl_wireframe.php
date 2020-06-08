@@ -7,7 +7,7 @@
  * Domain Path: /languages
  * Author: Kirsten Schelper
  * License: GPL 2.0+
- * Version: 0.0.2
+ * Version: 0.1
  * Author URI: https://start-the-loop.com
 */
 
