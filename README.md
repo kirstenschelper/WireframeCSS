@@ -2,7 +2,7 @@
 
 Gives your WordPress theme a wireframy look. Meant for pre-design prototyping. 
 
-![Image](./assets/images/screenshot-1.png)
+![Image](./assets/images/wireframe-screenshot.png)
 
 ## Description
 When setting up a new website the first thing I discuss with my client is the structure of the site.
