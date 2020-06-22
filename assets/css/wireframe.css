@@ -11,7 +11,7 @@
 @font-face {
   font-family: "redactedregular";
   src: url("/assets/webfonts/redacted-regular.eot");
-  src: url("/assets/webfonts/redacted-regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/redacted-regular.woff2") format("woff2"), url("../webfonts/redacted-regular.woff") format("woff"), url("../webfonts/redacted-regular.ttf") format("truetype"), url("../webfonts/redacted-regular.svg#redactedregular") format("svg");
+  src: url("/assets/webfonts/redacted-regular.eot?#iefix") format("embedded-opentype"), url("webfonts-wireframe/redacted-regular.woff2") format("woff2"), url("webfonts-wireframe/redacted-regular.woff") format("woff"), url("webfonts-wireframe/redacted-regular.ttf") format("truetype"), url("webfonts-wireframe/redacted-regular.svg#redactedregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,11 +42,11 @@ body.is-wireframe * {
 .is-wireframe figure img {
   -o-object-position: -99999px 99999px;
   object-position: -99999px 99999px;
-  background: url("../images/placeholder.png") center bottom no-repeat;
+  background: url("images/placeholder.png") center bottom no-repeat;
   background-size: cover !important;
 }
 .is-wireframe .wp-block-cover {
-  background: url("../images/placeholder.png") center bottom no-repeat !important;
+  background: url("images/placeholder.png") center bottom no-repeat !important;
   background-size: cover !important;
 }
 .is-wireframe .has-background-dim:before {
@@ -131,12 +131,12 @@ body.is-wireframe,
   color: white !important;
 }
 .is-wireframe .entry-content h1 {
-  font-size: 2.6em;
+  font-size: 2.8em;
   line-height: 1.4;
   margin-bottom: 1em;
 }
 .is-wireframe .entry-content h2 {
-  font-size: 2.2em;
+  font-size: 2.4em;
   line-height: 1.4;
   margin-bottom: 0.5em;
 }
