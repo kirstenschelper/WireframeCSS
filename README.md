@@ -6,12 +6,12 @@ Gives your WordPress theme a wireframy look. Meant for pre-design prototyping.
 
 ## Description
 When setting up a new website the first thing I discuss with my client is the structure of the site.
-Many people have a hard time wrapping their head around an abstract subject like the structure of their site. 
+Many people have a hard time wrapping their head around an abstract subject like this. 
 I tried different ways to communicate website structure (text-documents, sketching, wireframing tool X and prototyping tool Y). 
 But it turned out that both approaches are rather time-consuming and not very intuitive. 
 People are struggling to understand what those documents really mean for their website.
 
-I am working with my own standard theme and, I do layout and design directly in the browser. So I wondered if I could do the whole structure thing in the browser, too.
+I am working with my own standard theme and I do layout and design directly in the browser. So I wondered if I could do the whole structure thing in the browser, too.
 So I made up some CSS that removes "designy" elements from the WordPress theme. It also takes away the images and shows some dull placeholder image instead.
 I feel that this helps to focus on the elements themselves and how everything works together.
 This way the website looks somehow defamiliarised, but it feels like a normal website. You can click and scroll as usual.  
