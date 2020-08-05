@@ -60,7 +60,10 @@ body.is-wireframe * {
   like paragraphs for example. */
 body.is-wireframe,
 .is-wireframe p,
+.is-wireframe figcaption,
 .is-wireframe .widget ul li a,
+article ul li,
+article ol li,
 .wp-block-latest-posts__post-excerpt,
 .widget * {
   font-family: "redactedregular" !important;
